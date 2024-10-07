@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SZN Studios</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+
+<div class="scotch-container">
+    <nav>
+      <a href="context.html">Context</a>
+      <a href="" class="buy">Click A Shirt</a>
+    </nav>
+    <div class="main-container">
+        <div class="text-sphere-container">
+            <div class="text-container">
+                <h1>SZN Studios</h1>
+                <h2>Volume 1</h2>
+                <p>Let's journey through life together.</p>
+            </div>
+    
+            <!-- Floating Shirt Container -->
+            <div class="floating-shirt-container">
+                <!-- Shirt 1 -->
+                <a href="Giesgraffiti.png" class="floating-shirt-link" data-shirt-src="Giesgraffiti.png">
+                    <img src="Giesgraffiti.png" alt="Floating Shirt 1" class="floating-shirt">
+                </a>
+                <!-- Shirt 2 -->
+                <a href="sznansifyg.svg" class="floating-shirt-link" data-shirt-src="Ain't No Sunshine If You're Gone">
+                    <img src="sznansifyg.svg" alt="Floating Shirt 2" class="floating-shirt">
+                </a>
+                <!-- Shirt 3 -->
+                <a href="#" class="floating-shirt-link" data-shirt-src="Shirt3.png">
+                    <img src="" alt="Floating Shirt 3" class="floating-shirt">
+                </a>
+                <!-- Shirt 4 -->
+                <a href="sznansifyg2.svg" class="floating-shirt-link" data-shirt-src="Shirt4.png">
+                    <img src="sznansifyg2.svg" alt="Floating Shirt 4" class="floating-shirt">
+                </a>
+            </div>
+        </div>
+
+        <!-- Modal for Preorder -->
+        <div id="preorderModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modal-shirt-title">God in Every SZN</h2> <!-- Title will be updated dynamically -->
+                <img src="" alt="Selected Shirt" id="modal-shirt-image" style="width: 200px;">
+                <p>Price:$60 <strong id="modal-shirt-price">$0</strong></p> <!-- Price will be updated dynamically -->
+                <form id="preorder-form">
+                    <label for="size">Choose a size:</label>
+                    <select id="size" name="size" required>
+                        <option value="" disabled selected>Size</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="xl">X-Large</option>
+                    </select>
+                    <button type="submit">Preorder</button>
+                </form>
+            </div>
+            <div id="confirmationMessage" style="display: none;">
+                <h2>Thank you for your preorder!</h2>
+                <p>Your preorder for <span id="shirtName"></span> (Size: <span id="shirtSize"></span>) has been received.</p>
+                <p>We will notify you when your order is ready for shipping.</p>
+            </div>
+         </div>
+    
+            
+  
+  <script src="app.js"></script>
+  </html>
