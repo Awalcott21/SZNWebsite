@@ -87,18 +87,7 @@ document.querySelector(".close").addEventListener("click", () => {
     document.querySelector("#confirmationMessage").style.display = "none"; // Hide confirmation message
 
     // Reset modal content if needed
-    document.getElementById("modal-shirt-image").src = ""; // Clear image src if necessary
-    document.querySelector(".modal-content h2").textContent = ""; // Clear title if necessary
-});
-
-const mongoose = require('mongoose');
-
-mongoose.connect('mongodb+srv://awalcott213:PIffg0iZcBt5lnkZ@sznstudios.kgpvz.mongodb.net/', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}).then(() => {
-    console.log("Connected to MongoDB Atlas!");
-}).catch(err => {
-    console.error("Connection error", err);
+    document.getElementById("modal-shirt-image").src = "sznansifyg2.svg"; // Clear image src if necessary
+    document.querySelector(".modal-content h2").textContent = "Ain't No Sunshine If You're Gone"; // Clear title if necessary
 });
 
